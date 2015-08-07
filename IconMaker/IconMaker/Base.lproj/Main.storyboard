@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IconMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,55 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbZ-RN-tje">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="template" translatesAutoresizingMaskIntoConstraints="NO" id="E8h-xW-1AE">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1024" id="eQT-Zb-tDn"/>
+                                            <constraint firstAttribute="width" secondItem="E8h-xW-1AE" secondAttribute="height" multiplier="1:1" id="wRV-aS-ueQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngz-91-hfT" customClass="IconView" customModule="IconMaker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1024" id="KI7-S8-ie5"/>
+                                            <constraint firstAttribute="width" secondItem="ngz-91-hfT" secondAttribute="height" multiplier="1:1" id="n8A-wL-2lR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="E8h-xW-1AE" firstAttribute="leading" secondItem="dbZ-RN-tje" secondAttribute="leading" id="88f-vL-GsD"/>
+                                    <constraint firstAttribute="bottom" secondItem="E8h-xW-1AE" secondAttribute="bottom" id="9fG-c7-crr"/>
+                                    <constraint firstItem="ngz-91-hfT" firstAttribute="top" secondItem="dbZ-RN-tje" secondAttribute="top" id="H6w-Y9-9XV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ngz-91-hfT" secondAttribute="trailing" id="PvE-Gh-33L"/>
+                                    <constraint firstAttribute="trailing" secondItem="E8h-xW-1AE" secondAttribute="trailing" id="aQY-Tn-Ocy"/>
+                                    <constraint firstItem="E8h-xW-1AE" firstAttribute="top" secondItem="dbZ-RN-tje" secondAttribute="top" id="eBU-tV-abV"/>
+                                    <constraint firstAttribute="bottom" secondItem="ngz-91-hfT" secondAttribute="bottom" id="hJe-Gy-4JM"/>
+                                    <constraint firstItem="ngz-91-hfT" firstAttribute="leading" secondItem="dbZ-RN-tje" secondAttribute="leading" id="qQ5-bN-ZZB"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dbZ-RN-tje" secondAttribute="trailing" constant="-16" id="90x-2M-CSA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dbZ-RN-tje" secondAttribute="bottom" id="YEy-DQ-bmm"/>
+                            <constraint firstItem="dbZ-RN-tje" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="oBS-K7-Ceq"/>
+                            <constraint firstItem="dbZ-RN-tje" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="tRa-du-F7t"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="iconView" destination="ngz-91-hfT" id="GXP-io-OwZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="template" width="1024" height="1024"/>
+    </resources>
 </document>

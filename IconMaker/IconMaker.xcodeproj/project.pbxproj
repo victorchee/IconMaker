@@ -13,6 +13,9 @@
 		BBE075DE1B744091005E9EF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE075DD1B744091005E9EF4 /* Images.xcassets */; };
 		BBE075E11B744091005E9EF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE075DF1B744091005E9EF4 /* LaunchScreen.xib */; };
 		BBE075ED1B744091005E9EF4 /* IconMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE075EC1B744091005E9EF4 /* IconMakerTests.swift */; };
+		BBE075F81B7440F4005E9EF4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE075F61B7440F4005E9EF4 /* UIColor+Extension.swift */; };
+		BBE075F91B7440F4005E9EF4 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE075F71B7440F4005E9EF4 /* IconView.swift */; };
+		BBE075FB1B744138005E9EF4 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE075FA1B744138005E9EF4 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		BBE075E61B744091005E9EF4 /* IconMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IconMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE075EB1B744091005E9EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBE075EC1B744091005E9EF4 /* IconMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconMakerTests.swift; sourceTree = "<group>"; };
+		BBE075F61B7440F4005E9EF4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		BBE075F71B7440F4005E9EF4 /* IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		BBE075FA1B744138005E9EF4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			children = (
 				BBE075D61B744091005E9EF4 /* AppDelegate.swift */,
 				BBE075D81B744091005E9EF4 /* ViewController.swift */,
+				BBE075F71B7440F4005E9EF4 /* IconView.swift */,
+				BBE075F61B7440F4005E9EF4 /* UIColor+Extension.swift */,
+				BBE075FA1B744138005E9EF4 /* UIImage+Extension.swift */,
 				BBE075DA1B744091005E9EF4 /* Main.storyboard */,
 				BBE075DD1B744091005E9EF4 /* Images.xcassets */,
 				BBE075DF1B744091005E9EF4 /* LaunchScreen.xib */,
@@ -212,6 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE075F81B7440F4005E9EF4 /* UIColor+Extension.swift in Sources */,
+				BBE075F91B7440F4005E9EF4 /* IconView.swift in Sources */,
+				BBE075FB1B744138005E9EF4 /* UIImage+Extension.swift in Sources */,
 				BBE075D91B744091005E9EF4 /* ViewController.swift in Sources */,
 				BBE075D71B744091005E9EF4 /* AppDelegate.swift in Sources */,
 			);
