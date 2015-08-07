@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBE075D71B744091005E9EF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE075D61B744091005E9EF4 /* AppDelegate.swift */; };
+		BBE075D91B744091005E9EF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE075D81B744091005E9EF4 /* ViewController.swift */; };
+		BBE075DC1B744091005E9EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE075DA1B744091005E9EF4 /* Main.storyboard */; };
+		BBE075DE1B744091005E9EF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE075DD1B744091005E9EF4 /* Images.xcassets */; };
+		BBE075E11B744091005E9EF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE075DF1B744091005E9EF4 /* LaunchScreen.xib */; };
+		BBE075ED1B744091005E9EF4 /* IconMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE075EC1B744091005E9EF4 /* IconMakerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBE075E71B744091005E9EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBE075C91B744091005E9EF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBE075D01B744091005E9EF4;
+			remoteInfo = IconMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BBE075D11B744091005E9EF4 /* IconMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE075D51B744091005E9EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE075D61B744091005E9EF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBE075D81B744091005E9EF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BBE075DB1B744091005E9EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBE075DD1B744091005E9EF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BBE075E01B744091005E9EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BBE075E61B744091005E9EF4 /* IconMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IconMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE075EB1B744091005E9EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE075EC1B744091005E9EF4 /* IconMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconMakerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBE075CE1B744091005E9EF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE075E31B744091005E9EF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBE075C81B744091005E9EF4 = {
+			isa = PBXGroup;
+			children = (
+				BBE075D31B744091005E9EF4 /* IconMaker */,
+				BBE075E91B744091005E9EF4 /* IconMakerTests */,
+				BBE075D21B744091005E9EF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBE075D21B744091005E9EF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBE075D11B744091005E9EF4 /* IconMaker.app */,
+				BBE075E61B744091005E9EF4 /* IconMakerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBE075D31B744091005E9EF4 /* IconMaker */ = {
+			isa = PBXGroup;
+			children = (
+				BBE075D61B744091005E9EF4 /* AppDelegate.swift */,
+				BBE075D81B744091005E9EF4 /* ViewController.swift */,
+				BBE075DA1B744091005E9EF4 /* Main.storyboard */,
+				BBE075DD1B744091005E9EF4 /* Images.xcassets */,
+				BBE075DF1B744091005E9EF4 /* LaunchScreen.xib */,
+				BBE075D41B744091005E9EF4 /* Supporting Files */,
+			);
+			path = IconMaker;
+			sourceTree = "<group>";
+		};
+		BBE075D41B744091005E9EF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBE075D51B744091005E9EF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BBE075E91B744091005E9EF4 /* IconMakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBE075EC1B744091005E9EF4 /* IconMakerTests.swift */,
+				BBE075EA1B744091005E9EF4 /* Supporting Files */,
+			);
+			path = IconMakerTests;
+			sourceTree = "<group>";
+		};
+		BBE075EA1B744091005E9EF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBE075EB1B744091005E9EF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBE075D01B744091005E9EF4 /* IconMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBE075F01B744091005E9EF4 /* Build configuration list for PBXNativeTarget "IconMaker" */;
+			buildPhases = (
+				BBE075CD1B744091005E9EF4 /* Sources */,
+				BBE075CE1B744091005E9EF4 /* Frameworks */,
+				BBE075CF1B744091005E9EF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IconMaker;
+			productName = IconMaker;
+			productReference = BBE075D11B744091005E9EF4 /* IconMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBE075E51B744091005E9EF4 /* IconMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBE075F31B744091005E9EF4 /* Build configuration list for PBXNativeTarget "IconMakerTests" */;
+			buildPhases = (
+				BBE075E21B744091005E9EF4 /* Sources */,
+				BBE075E31B744091005E9EF4 /* Frameworks */,
+				BBE075E41B744091005E9EF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBE075E81B744091005E9EF4 /* PBXTargetDependency */,
+			);
+			name = IconMakerTests;
+			productName = IconMakerTests;
+			productReference = BBE075E61B744091005E9EF4 /* IconMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBE075C91B744091005E9EF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = VictorChee;
+				TargetAttributes = {
+					BBE075D01B744091005E9EF4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BBE075E51B744091005E9EF4 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BBE075D01B744091005E9EF4;
+					};
+				};
+			};
+			buildConfigurationList = BBE075CC1B744091005E9EF4 /* Build configuration list for PBXProject "IconMaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBE075C81B744091005E9EF4;
+			productRefGroup = BBE075D21B744091005E9EF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBE075D01B744091005E9EF4 /* IconMaker */,
+				BBE075E51B744091005E9EF4 /* IconMakerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBE075CF1B744091005E9EF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE075DC1B744091005E9EF4 /* Main.storyboard in Resources */,
+				BBE075E11B744091005E9EF4 /* LaunchScreen.xib in Resources */,
+				BBE075DE1B744091005E9EF4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE075E41B744091005E9EF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBE075CD1B744091005E9EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE075D91B744091005E9EF4 /* ViewController.swift in Sources */,
+				BBE075D71B744091005E9EF4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE075E21B744091005E9EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE075ED1B744091005E9EF4 /* IconMakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBE075E81B744091005E9EF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBE075D01B744091005E9EF4 /* IconMaker */;
+			targetProxy = BBE075E71B744091005E9EF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBE075DA1B744091005E9EF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBE075DB1B744091005E9EF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBE075DF1B744091005E9EF4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBE075E01B744091005E9EF4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBE075EE1B744091005E9EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBE075EF1B744091005E9EF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBE075F11B744091005E9EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IconMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BBE075F21B744091005E9EF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IconMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BBE075F41B744091005E9EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IconMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IconMaker.app/IconMaker";
+			};
+			name = Debug;
+		};
+		BBE075F51B744091005E9EF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IconMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IconMaker.app/IconMaker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBE075CC1B744091005E9EF4 /* Build configuration list for PBXProject "IconMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE075EE1B744091005E9EF4 /* Debug */,
+				BBE075EF1B744091005E9EF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBE075F01B744091005E9EF4 /* Build configuration list for PBXNativeTarget "IconMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE075F11B744091005E9EF4 /* Debug */,
+				BBE075F21B744091005E9EF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BBE075F31B744091005E9EF4 /* Build configuration list for PBXNativeTarget "IconMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE075F41B744091005E9EF4 /* Debug */,
+				BBE075F51B744091005E9EF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBE075C91B744091005E9EF4 /* Project object */;
+}
