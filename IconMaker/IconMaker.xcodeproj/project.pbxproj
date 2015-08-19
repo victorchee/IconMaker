@@ -16,6 +16,7 @@
 		BBE075F81B7440F4005E9EF4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE075F61B7440F4005E9EF4 /* UIColor+Extension.swift */; };
 		BBE075F91B7440F4005E9EF4 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE075F71B7440F4005E9EF4 /* IconView.swift */; };
 		BBE075FB1B744138005E9EF4 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE075FA1B744138005E9EF4 /* UIImage+Extension.swift */; };
+		F02699991B848F230006AF25 /* FaviconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02699981B848F230006AF25 /* FaviconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		BBE075F61B7440F4005E9EF4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		BBE075F71B7440F4005E9EF4 /* IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		BBE075FA1B744138005E9EF4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F02699981B848F230006AF25 /* FaviconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaviconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				BBE075D61B744091005E9EF4 /* AppDelegate.swift */,
 				BBE075D81B744091005E9EF4 /* ViewController.swift */,
 				BBE075F71B7440F4005E9EF4 /* IconView.swift */,
+				F02699981B848F230006AF25 /* FaviconView.swift */,
 				BBE075F61B7440F4005E9EF4 /* UIColor+Extension.swift */,
 				BBE075FA1B744138005E9EF4 /* UIImage+Extension.swift */,
 				BBE075DA1B744091005E9EF4 /* Main.storyboard */,
@@ -224,6 +227,7 @@
 				BBE075F81B7440F4005E9EF4 /* UIColor+Extension.swift in Sources */,
 				BBE075F91B7440F4005E9EF4 /* IconView.swift in Sources */,
 				BBE075FB1B744138005E9EF4 /* UIImage+Extension.swift in Sources */,
+				F02699991B848F230006AF25 /* FaviconView.swift in Sources */,
 				BBE075D91B744091005E9EF4 /* ViewController.swift in Sources */,
 				BBE075D71B744091005E9EF4 /* AppDelegate.swift in Sources */,
 			);
@@ -423,6 +427,7 @@
 				BBE075F21B744091005E9EF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBE075F31B744091005E9EF4 /* Build configuration list for PBXNativeTarget "IconMakerTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				BBE075F51B744091005E9EF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
