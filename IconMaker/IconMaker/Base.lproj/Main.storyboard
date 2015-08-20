@@ -28,24 +28,42 @@
                                             <constraint firstAttribute="width" secondItem="E8h-xW-1AE" secondAttribute="height" multiplier="1:1" id="wRV-aS-ueQ"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngz-91-hfT" customClass="IconView" customModule="IconMaker" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNb-4s-294" customClass="FaviconView" customModule="IconMaker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOP-EQ-Vbe">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="300"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="1024" id="KI7-S8-ie5"/>
-                                            <constraint firstAttribute="width" secondItem="ngz-91-hfT" secondAttribute="height" multiplier="1:1" id="n8A-wL-2lR"/>
+                                            <constraint firstAttribute="bottom" secondItem="jOP-EQ-Vbe" secondAttribute="bottom" id="JkF-Ko-9zf"/>
+                                            <constraint firstAttribute="trailing" secondItem="jOP-EQ-Vbe" secondAttribute="trailing" id="RF1-Le-9KQ"/>
+                                            <constraint firstItem="jOP-EQ-Vbe" firstAttribute="leading" secondItem="nNb-4s-294" secondAttribute="leading" id="g2x-XU-L8q"/>
+                                            <constraint firstItem="jOP-EQ-Vbe" firstAttribute="top" secondItem="nNb-4s-294" secondAttribute="top" id="lpq-fw-QW8"/>
                                         </constraints>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngz-91-hfT" customClass="IconView" customModule="IconMaker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="nNb-4s-294" firstAttribute="top" secondItem="E8h-xW-1AE" secondAttribute="top" id="1dk-lY-LPv"/>
+                                    <constraint firstItem="nNb-4s-294" firstAttribute="trailing" secondItem="E8h-xW-1AE" secondAttribute="trailing" id="4Mr-NI-kms"/>
                                     <constraint firstItem="E8h-xW-1AE" firstAttribute="leading" secondItem="dbZ-RN-tje" secondAttribute="leading" id="88f-vL-GsD"/>
                                     <constraint firstAttribute="bottom" secondItem="E8h-xW-1AE" secondAttribute="bottom" id="9fG-c7-crr"/>
-                                    <constraint firstItem="ngz-91-hfT" firstAttribute="top" secondItem="dbZ-RN-tje" secondAttribute="top" id="H6w-Y9-9XV"/>
-                                    <constraint firstAttribute="trailing" secondItem="ngz-91-hfT" secondAttribute="trailing" id="PvE-Gh-33L"/>
+                                    <constraint firstItem="ngz-91-hfT" firstAttribute="top" secondItem="E8h-xW-1AE" secondAttribute="top" id="Yxw-Av-ACZ"/>
                                     <constraint firstAttribute="trailing" secondItem="E8h-xW-1AE" secondAttribute="trailing" id="aQY-Tn-Ocy"/>
+                                    <constraint firstItem="ngz-91-hfT" firstAttribute="leading" secondItem="E8h-xW-1AE" secondAttribute="leading" id="dbw-0K-ctl"/>
                                     <constraint firstItem="E8h-xW-1AE" firstAttribute="top" secondItem="dbZ-RN-tje" secondAttribute="top" id="eBU-tV-abV"/>
-                                    <constraint firstAttribute="bottom" secondItem="ngz-91-hfT" secondAttribute="bottom" id="hJe-Gy-4JM"/>
-                                    <constraint firstItem="ngz-91-hfT" firstAttribute="leading" secondItem="dbZ-RN-tje" secondAttribute="leading" id="qQ5-bN-ZZB"/>
+                                    <constraint firstItem="nNb-4s-294" firstAttribute="bottom" secondItem="E8h-xW-1AE" secondAttribute="bottom" id="jC2-Iq-Fpm"/>
+                                    <constraint firstItem="ngz-91-hfT" firstAttribute="bottom" secondItem="E8h-xW-1AE" secondAttribute="bottom" id="nYT-aF-bPb"/>
+                                    <constraint firstItem="nNb-4s-294" firstAttribute="leading" secondItem="E8h-xW-1AE" secondAttribute="leading" id="rrU-GU-Qz6"/>
+                                    <constraint firstItem="ngz-91-hfT" firstAttribute="trailing" secondItem="E8h-xW-1AE" secondAttribute="trailing" id="uc0-Wq-f26"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -58,6 +76,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="faviconLabel" destination="jOP-EQ-Vbe" id="K2U-ZG-Etm"/>
+                        <outlet property="faviconView" destination="nNb-4s-294" id="bsY-qo-lVC"/>
                         <outlet property="iconView" destination="ngz-91-hfT" id="GXP-io-OwZ"/>
                     </connections>
                 </viewController>

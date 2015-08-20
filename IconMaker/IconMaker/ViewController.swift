@@ -12,9 +12,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var iconView: IconView!
     
+    @IBOutlet weak var faviconView: FaviconView!
+    @IBOutlet weak var faviconLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        faviconLabel.font = UIFont.systemFontOfSize(500)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +27,11 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        saveIcons()
+        saveFavicons()
+    }
+    
+    func saveIcons() {
         let originalImage = captureView(iconView);
         saveToDocument(originalImage, name: "1024") // 1024
         saveToDocument(originalImage.resize(CGSizeMake(29*1, 29*1)), name: "29")
@@ -42,6 +50,24 @@ class ViewController: UIViewController {
         saveToDocument(originalImage.resize(CGSizeMake(72*2, 72*2)), name: "72@2x")
         saveToDocument(originalImage.resize(CGSizeMake(76*1, 76*1)), name: "76")
         saveToDocument(originalImage.resize(CGSizeMake(76*2, 76*2)), name: "76@2x")
+    }
+    
+    func saveFavicons() {
+        let originalImage = captureView(faviconView);
+        saveToDocument(originalImage, name: "1024") // 1024
+        saveToDocument(originalImage.resize(CGSizeMake(57, 57)), name: "apple-icon-57x57")
+        saveToDocument(originalImage.resize(CGSizeMake(60, 60)), name: "apple-icon-60x60")
+        saveToDocument(originalImage.resize(CGSizeMake(72, 72)), name: "apple-icon-72x72")
+        saveToDocument(originalImage.resize(CGSizeMake(76, 76)), name: "apple-icon-76x76")
+        saveToDocument(originalImage.resize(CGSizeMake(114, 114)), name: "apple-icon-114x114")
+        saveToDocument(originalImage.resize(CGSizeMake(120, 120)), name: "apple-icon-120x120")
+        saveToDocument(originalImage.resize(CGSizeMake(144, 144)), name: "apple-icon-144x144")
+        saveToDocument(originalImage.resize(CGSizeMake(152, 152)), name: "apple-icon-152x152")
+        saveToDocument(originalImage.resize(CGSizeMake(180, 180)), name: "apple-icon-180x180")
+        saveToDocument(originalImage.resize(CGSizeMake(16, 16)), name: "favicon-16x16")
+        saveToDocument(originalImage.resize(CGSizeMake(32, 32)), name: "favicon-32x32")
+        saveToDocument(originalImage.resize(CGSizeMake(96, 96)), name: "favicon-96x96")
+        saveToDocument(originalImage.resize(CGSizeMake(192, 192)), name: "favicon-192x192")
     }
     
     func captureView(view: UIView) -> UIImage {
