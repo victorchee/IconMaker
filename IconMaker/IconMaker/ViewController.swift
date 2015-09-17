@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     func captureView(view: UIView) -> UIImage {
         UIGraphicsBeginImageContext(view.bounds.size)
         let context = UIGraphicsGetCurrentContext()
-        view.layer.renderInContext(context)
+        view.layer.renderInContext(context!)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
@@ -81,9 +81,10 @@ class ViewController: UIViewController {
     
     func saveToDocument(image: UIImage, name: String) {
         let data = UIImagePNGRepresentation(image)
-        let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
-        let path = paths.first?.stringByAppendingPathComponent(name + ".png")
-        data.writeToFile(path!, atomically: true)
+        let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+        if let url = urls.first?.URLByAppendingPathComponent(name + ".png") {
+            data?.writeToURL(url, atomically: true)
+        }
     }
 }
 

@@ -25,7 +25,7 @@ class FaviconView: UIView {
         let locations: [CGFloat] = [0.0, 1.0]
         let components: [CGFloat] = [startColorComponents[0], startColorComponents[1], startColorComponents[2], startColorComponents[3],
             endColorComponents[0], endColorComponents[1], endColorComponents[2], endColorComponents[3]]
-        let colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()
+        let colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()!
         let gradient = CGGradientCreateWithColorComponents(colorSpace, components, locations, locationsCount)
         
         // radial gradient
@@ -35,7 +35,7 @@ class FaviconView: UIView {
         
         // linear gradient
         CGContextSaveGState(context)
-        CGContextDrawLinearGradient(context, gradient, CGPointMake(CGRectGetWidth(bounds)/2.0, 0), CGPointMake(CGRectGetWidth(bounds)/2.0, CGRectGetHeight(bounds)), CGGradientDrawingOptions(0))
+        CGContextDrawLinearGradient(context, gradient, CGPointMake(CGRectGetWidth(bounds)/2.0, 0), CGPointMake(CGRectGetWidth(bounds)/2.0, CGRectGetHeight(bounds)), CGGradientDrawingOptions(rawValue: 0))
         CGContextRestoreGState(context)
     }
     
